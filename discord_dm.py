@@ -9,10 +9,11 @@ from dotenv import load_dotenv
 
 #-- 1. CONFIGURATION --
 # Load the .env file
-load_dotenv()
-DISCORD_TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
-MODEL_ACCESS_KEY = os.environ.get("MODEL_ACCESS_KEY")
-GRADIENT_ID = os.environ.get("GRADIENT_WORKSPACE_ID")
+load_dotenv() #--${{ secrets.API_KEY }}
+
+DISCORD_TOKEN = os.environ.get("${{ secrets.DISCORD_BOT_TOKEN }}")
+MODEL_ACCESS_KEY = os.environ.get("${{ secrets.MODEL_ACCESS_KEY }}")
+GRADIENT_ID = os.environ.get("${{ secrets.GRADIENT_WORKSPACE_ID }}")
 
 intents = discord.Intents.default()
 intents.message_content = True
