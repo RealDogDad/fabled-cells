@@ -1,4 +1,4 @@
-name: ai-dm
+name: fabled-cells
 channels:
   - defaults
 dependencies:
