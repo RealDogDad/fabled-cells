@@ -1,0 +1,11 @@
+name: ai-dm
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - discord.py
+    - gradient
+    - psycopg2-binary
+    - python-dotenv

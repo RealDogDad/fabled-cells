@@ -1,0 +1,21 @@
+# --- Security ---
+.env
+.env.local
+.env.*.local
+secrets/
+# Ignore any files that might contain sensitive information
+*.key
+
+# --- Python Junk ---
+__pycache__/
+*.pyc
+
+# --- Environments ---
+.virtual
+env/
+venv/
+ai-dm/
+
+# --- OS Junk ---
+.DS_Store
+Thumbs.db
