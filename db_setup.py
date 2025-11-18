@@ -7,10 +7,10 @@ load_dotenv()
 
 # Config - In a real app, put these in .env
 DB_CONFIG = {
-    "dbname": os.getenv("DB_NAME"),
-    "user": os.getenv("DB_USER"),
-    "password": os.getenv("DB_PASSWORD"),
-    "host": os.getenv("DB_HOST")
+    "dbname": "fabled_cells_db",
+    "user": "fabled_admin",
+    "password": "aigm_0311",
+    "host": "localhost"
 }
 
 def init_db():
